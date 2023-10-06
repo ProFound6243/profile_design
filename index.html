@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF | Profile heder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .avtive::after{
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: -16px;
+            width: 100%;
+            height: 3px;
+            background-color: #2563EB;
+        }
+        .hover-link:hover::after{
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: -16px;
+            width: 100%;
+            height: 3px;
+            background-color: #2563EB; 
+        }
+    </style>
+</head>
+<body class="font-['Open_Sans']">
+    <div class="container mx-auto">
+        <header class="relative rounded-b-lg shadow-[0px_0px_4px_0px_rgba(72,72,72,0.5)]">
+
+            <figure class="relative w-full h-64 overflow-hidden hidden
+                md:block
+                after:absolute after:h-1/2 after:w-full after:bottom-0 after:bg-gradient-to-t after:from-[rgba(36,36,36,0.5)] absolute:to-[rgba(36,36,36,0)]">
+                <img class="absolute mt-32 -translate-y-1/2" src="./img/destiny.jpg" alt="">
+            </figure>
+            
+
+            <div class="relative inline-block w-full
+                        md:flex md:flex-nowrap md:px-16">
+
+                <figure class ="relative max-w-full overflow-hidden 
+                        md:w-32 md:h-32 md:rounded-full md:shadow-[0px_0px_4px_0px_rgba(72,72,72,0.5)] md:-translate-y-1/2 md:-mb-16
+                        md:after:h-0 after:absolute after:h-1/2 after:w-full after:bottom-0 after:bg-gradient-to-t after:from-[rgba(36,36,36,0.25)] absolute:to-[rgba(36,36,36,0)]">
+                    <img 
+                        class="relative" 
+                        src="./img//profile_img.jpg" 
+                        alt="">
+                </figure>
+                
+                <div class="relative">
+
+                    <div class="relative grid items-center h-16 -translate-y-full -mb-16">
+                        <p class="relative px-4 font-bold text-2xl text-white 
+                                  md:text-3xl">
+                            ProFound6243
+                        </p>
+                    </div>
+
+                    <div class="relative grid gap-4 p-4">
+
+                        <div>
+                            <p>PF | Data scientist</p>
+                            <p>Sometimes you win! Sometimes you learn!</p>    
+                        </div>
+
+                        <div class="relative flex gap-4">
+                            <button class="relative px-4 py-2 bg-[#DDDCDC] rounded-lg text-sm text-[#484848]">Do'stlashish</button>
+    
+                            <button class="relative px-4 py-2 bg-[#DDDCDC] rounded-lg text-sm text-[#484848]">Xabar yuborish</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <nav class="relative inline-block flex  justify-around p-4 gap-4
+                        md:justify-end">
+                <a class="relative avtive" href="#">Profile</a>
+                <a class="relative hover-link" href="#">Videos</a>
+                <a class="relative hover-link" href="#">Photos</a>
+                <a class="relative hover-link" href="#">Musics</a>
+                <a class="relative hover-link" href="#">Games</a>
+            </nav>
+        </header>
+        <br>
+        <br>
+    </div>
+</body>
+</html>
